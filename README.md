@@ -1,0 +1,1 @@
+# adonis-inertia-vue3-typescript-starter
