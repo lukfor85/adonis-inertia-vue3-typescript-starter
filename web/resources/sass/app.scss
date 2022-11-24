@@ -1,0 +1,12 @@
+@import './variables';
+
+html {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 100%;
+    font-family: $font-primary;
+    background-color: $app-background-color;
+    -webkit-font-smoothing: antialiased; /* Improving font rendering on OS X */
+    -moz-osx-font-smoothing: grayscale; /* Improving font rendering on OS X */
+}

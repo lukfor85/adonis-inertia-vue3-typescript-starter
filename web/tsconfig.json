@@ -1,0 +1,61 @@
+{
+    "extends": "adonis-preset-ts/tsconfig.json",
+    "include": [
+        "**/*",
+        "resources/**/*.vue",
+        "resources/**/*.ts",
+        "resources/**/*.json"
+    ],
+    "exclude": [
+        "node_modules",
+        "build"
+    ],
+    "compilerOptions": {
+        "outDir": "build",
+        "rootDir": "./",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "jsx": "preserve",
+        "resolveJsonModule": true,
+        "noUnusedParameters": false,
+        "noUnusedLocals": false,
+        "lib": [
+            "esnext",
+            "dom",
+        ],
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ],
+        "paths": {
+            "App/*": [
+                "./app/*"
+            ],
+            "Config/*": [
+                "./config/*"
+            ],
+            "Contracts/*": [
+                "./contracts/*"
+            ],
+            "Database/*": [
+                "./database/*"
+            ]
+        },
+        "types": [
+            "@adonisjs/core",
+            "@adonisjs/repl",
+            "@adonisjs/session",
+            "@adonisjs/view",
+            "@adonisjs/shield",
+            "@japa/preset-adonis/build/adonis-typings",
+            "@eidellev/inertia-adonisjs",
+            "@eidellev/adonis-stardust",
+            "vue-i18n"
+        ],
+        "typeRoots": [
+            "./resources/types"
+        ],
+        "useDefineForClassFields": true
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "extends": [
+        "plugin:adonis/typescriptApp",
+        "plugin:vue/vue3-recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "extraFileExtensions": [
+            ".vue"
+        ]
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "@typescript-eslint/array-type": [
+            "error",
+            {
+                "default": "generic"
+            }
+        ],
+        "@typescript-eslint/no-confusing-non-null-assertion": "warn",
+        "padding-line-between-statements": "off",
+        "@typescript-eslint/padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": [
+                    "return"
+                ]
+            }
+        ],
+        "prettier/prettier": [
+            "error"
+        ]
+    }
+}
