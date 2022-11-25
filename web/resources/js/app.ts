@@ -2,6 +2,7 @@ import WebApp from '@/WebApp.vue';
 import { initRoutes } from '@eidellev/adonis-stardust/client';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
+import 'tw-elements';
 import { createApp, h } from 'vue';
 import '../sass/app.scss';
 import { i18n } from './i18n';
